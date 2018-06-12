@@ -10,6 +10,6 @@
 </head>
   
 <body>
-  <h3>This is not a test</p>
+  <h3>This is not a test</h3>
 </body>
 </html>
