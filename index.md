@@ -4,7 +4,7 @@
   <style>
     p {
       font-size: 30px;
-      color: red;
+      color: black;
     }
   </style>
 </head>
