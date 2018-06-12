@@ -1,9 +1,10 @@
 <html>
 <head>
   <style>
-    h3 {
+    h1 {
       font-size: 30px;
       color: black;
+      margin: 0 auto;
     }
     .test {
       color: red;
