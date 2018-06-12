@@ -2,6 +2,10 @@
 <html>
 <head>
   <style>
+    p {
+      font-size: 30px;
+      color: red;
+    }
   </style>
 </head>
   
