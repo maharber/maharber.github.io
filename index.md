@@ -15,6 +15,6 @@
   
 <body>
   <h3>This is not a test</h3>
-  <div class="test">Test<div>
+  <div class="test">Test</div>
 </body>
 </html>
