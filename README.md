@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 # maharber.github.io
 # Test
-<!DOCTYPE html>
+
 
 <head> </head>
 
