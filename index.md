@@ -14,7 +14,7 @@
 </head>
   
 <body>
-  <h3>This is not a test</h3>
+  <h1>This is not a test</h1>
   <div class="test">Test</div>
   
   <input type="password">
