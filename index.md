@@ -2,7 +2,7 @@
 <html>
 <head>
   <style>
-    p {
+    h3 {
       font-size: 30px;
       color: black;
     }
@@ -10,6 +10,6 @@
 </head>
   
 <body>
-  <p>This is not a test</p>
+  <h3>This is not a test</p>
 </body>
 </html>
