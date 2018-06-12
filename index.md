@@ -8,7 +8,7 @@
     }
     .test {
       color: red;
-      font-size: 40
+      font-size: 40px;
     }
   </style>
 </head>
