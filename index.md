@@ -16,6 +16,7 @@
   <h3>This is not a test</h3>
   <div class="test">Test</div>
   
+  <input type="email">
   <input type="Submit">
   
 </body>
