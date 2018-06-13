@@ -30,8 +30,8 @@
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     opacity: 1;
-    border-radius: 0px 20px 0px 0px;
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    border-radius: 0px 20px 0px 0px;
   }
   .sidebar a {
     padding: 8px 8px 8px 32px;
@@ -81,6 +81,15 @@
     letter-spacing: 30px
   }
   
+  .vl {
+    position: absolute;
+    top: 0;
+    left: 13px;
+    height: 100%;
+    width: 1px;
+    background: black;
+  }
+  
   #main {
     transition: margin-left .5s;
     padding: 20px;
@@ -114,6 +123,7 @@
       
       <!-- Nav Button -->
     <div onmouseover="openNav()" class="navArea">NAVIGATION</div>
+    <div class="vl"></div>
     
     </div>
     
