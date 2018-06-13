@@ -3,51 +3,95 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 <head>
+
   <title>Miles' Personal Website</title>
   <style>
+  
   .header {
-    background: #e3e3e3;
+    background: white;
     width: 100%;
     height: 150px;
     top: 0;
-    left: 20px;
+    left: 0;
   }
+  
+  .header h1 {
+    margin: 0px 0px 0px 30px;
+  }
+  
   .sidebar {
-    width: 160px;
-    height: 100%;
-    z-index: 1;
-    position: fixed;
-    background: black;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    opacity: 1;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   }
   .sidebar a {
-    display: block;
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    padding: 10px 10px 10px 15px;
-    font-size: 24px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
     color: white;
+    display: block;
+    transition: 0.3s;
     
   }
   .sidebar a:hover {
     color: gray
   }
   
-  .main {
-    margin-left: 160px;
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .sidebar p {
+    color: e3e3e3;
+    padding: 10px 0px 0px 10px;
+    font-size: 30px;
+    padding-top: 10px;
+    opacity: 1;
+  
+  }
+  
+  .hide_sidebar p {
+    color: black;
+    opacity:1
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
   }
     
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }  
     
   </style>
 </head>
 
 
 <body>
-  <div class="sidebar">
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <p>Navigation</p>
     <a href="https://maharber.github.io/about">About</a>
     <a href="https://maharber.github.io/important-links">Important Links</a>
+    
   </div>
+  <span onclick="openNav()">Navigation</span>
   
-  <div class="main">
+  <div id="main">
     <div class="header">
       <h1>Miles' Personal Website</h1>
       <h2>Welcome!</h2>
@@ -56,6 +100,19 @@
     <p>Test text. Blah blah blah</p>
   </div>
   
+  <script>
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
+  </script>
 
 
 
