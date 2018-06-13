@@ -1,10 +1,100 @@
 <html>
   
   <head>
+    <style>
+      
+      
+      
+      .sidebar {
+        height: 30px; 
+        width: 100%; 
+        position: fixed; /* Follow as you scroll */
+        z-index: 1; /* Stay on top */
+        bottom: 0; /* Stay at the bottom */
+        left: 0;
+        background-color: #111; /* Black*/
+        overflow-y: hidden; /* Disable vertical scroll */
+        opacity: 1;
+        transition: .5s; /* 0.5 second transition effect to slide in the sidenav */
+        border-radius: 20px 20px 0px 0px;
+      }
+      
+      .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: inline;
+        transition: 0.3s;
+      }
+      
+      .sidebar a:hover {
+        color: gray
+      }
+      
+      .sidebar p {
+        color: white;
+        text-align: center;
+        padding: 0px 0px 0px 0px;
+        margin-top: 0px;
+        font-size: 20px;
+        opacity: 1;
+      }
+      
+      /* Not sure this part does anything */
+      .hide_sidebar p {
+        color: black;
+        opacity:1
+      }
+      /* ----- */
+      
+      
+      @media screen and (max-width: 350px) {
+        .sidebar {
+      
+        }
+        .sidebar a {
+          font-size: 18px;
+        }
+        .sidebar p {
+          font-size: 20px;
+        }
     
+      }
+      
+    </style>
   </head>
   
   <body>
+    
+    <!--Sidebar -->
+  <div onmouseover="openNav()" onmouseout="closeNav()" id="mySidebar" class="sidebar">
+    <p>Sitemap</p>
+    <a href="https://maharber.github.io">Home</a>
+    <a href="https://maharber.github.io/about">About Me</a>
+    <a href="https://maharber.github.io/projects">Projects</a>
+    <a href="https://maharber.github.io/media">Media</a>
+  </div>
+    
+    <!-- Main  -->
+  <div id="main">
+    <div class="header">
+        
+    </div>
+    
+    <p></p>
+  </div>
+    
+    
+    <script>
+      // Open and Close Sitemap
+function openNav() {
+    document.getElementById("mySidebar").style.height = "200px";
+}
+function closeNav() {
+    document.getElementById("mySidebar").style.height = "30px";
+}
+  </script>
     
   </body>
 </html>
