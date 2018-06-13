@@ -67,6 +67,19 @@
     opacity:1
   }
   
+  .navArea {
+    position: fixed;
+    top: 50%;
+    left: -49%;
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    letter-spacing: 30px
+  }
+  
   #main {
     transition: margin-left .5s;
     padding: 20px;
@@ -82,19 +95,25 @@
 
 
 <body>
+  <!--Sidebar -->
   <div id="mySidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <p>Navigation</p>
     <a href="https://maharber.github.io/about">About</a>
-    <a href="https://maharber.github.io/important-links">Important Links</a>
+    <a href="https://maharber.github.io/projects">Projects</a>
+    <a href="https://maharber.github.io/media">Media</a>
     
   </div>
-  <span onclick="openNav()">Navigation</span>
   
+  <!-- Main (gets pushed) -->
   <div id="main">
     <div class="header">
       <h1>Miles' Personal Website</h1>
       <h2>Welcome!</h2>
+      
+      <!-- Nav Button -->
+    <div onmouseover="openNav()" class="navArea">NAVIGATION</div>
+    
     </div>
     
     <p>Test text. Blah blah blah</p>
@@ -103,10 +122,10 @@
   <script>
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("mySidebar").style.width = "200px";
+    document.getElementById("main").style.marginLeft = "200px";
+    document.getElementById("navArea").style.width = "0px";
 }
-
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
@@ -118,6 +137,8 @@ function closeNav() {
 
 
 </body>
+
+
 
 
 
