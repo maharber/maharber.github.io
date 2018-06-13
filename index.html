@@ -20,7 +20,7 @@
   }
   
   .sidebar {
-    height: 20px; /* 100% Full-height */
+    height: 30px; /* 100% Full-height */
     width: 100%; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
@@ -28,9 +28,8 @@
     left: 0;
     background-color: #111; /* Black*/
     overflow-y: hidden; /* Disable horizontal scroll */
-    /*padding-top: 60px; /* Place content 60px from the top */*/
     opacity: 1;
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    transition: .5s; /* 0.5 second transition effect to slide in the sidenav */
     border-radius: 20px 20px 0px 0px;
   }
   .sidebar a {
@@ -47,9 +46,11 @@
   }
   
   .sidebar p {
-    color: e3e3e3;
-    padding: 10px 0px 0px 10px;
-    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    margin-top: 0px;
+    font-size: 20px;
     opacity: 1;
   
   }
@@ -70,10 +71,6 @@
     .sidebar p {
       font-size: 20px;
     }
-    .navArea {
-      
-      opacity: 1;
-    }
     
   }  
     
@@ -84,8 +81,9 @@
 <body>
   <!--Sidebar -->
   <div onmouseover="openNav()" onmouseout="closeNav()" id="mySidebar" class="sidebar">
-    <p>Navigation</p>
-    <a href="https://maharber.github.io/about">About</a>
+    <p>Sitemap</p>
+    <a href="https://maharber.github.io">Home</a>
+    <a href="https://maharber.github.io/about">About Me</a>
     <a href="https://maharber.github.io/projects">Projects</a>
     <a href="https://maharber.github.io/media">Media</a>
     
@@ -94,7 +92,7 @@
   <!-- Main (gets pushed) -->
   <div id="main">
     <div class="header">
-      <h1>Miles' Personal Website</h1>
+      <h1>Website</h1>
       <h2>Welcome!</h2>   
     </div>
     
@@ -109,7 +107,7 @@ function openNav() {
 }
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
-    document.getElementById("mySidebar").style.height = "20px";
+    document.getElementById("mySidebar").style.height = "30px";
     //document.getElementById("main").style.marginLeft = "0";
 }
   </script>
@@ -118,8 +116,6 @@ function closeNav() {
 
 
 </body>
-
-
 
 
 
