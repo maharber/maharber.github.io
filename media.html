@@ -87,25 +87,6 @@
     opacity:1
   }
   
-
-  @media screen and (max-width: 350px) {
-    .header a {
-      font-size: 30px;
-    }
-    
-    .header h2 {
-      font-size: 20px;
-    }
-    
-    .sidebar a {
-      font-size: 18px;
-    }
-    
-    .sidebar p {
-      font-size: 20px;
-    }
-    
-  }  
    /* Social Media Icon Styling */
   .profile {
     color: black;
@@ -115,6 +96,40 @@
     left: 38%;
   }   
     
+      /* Narrow Screen */
+       @media screen and (max-width: 600px) {
+  .header a {
+    font-size: 30px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    top: 20px;
+  }
+    
+  .header h2 {
+    font-size: 50px;   
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    top: 60px;
+  }
+    
+  .profile {
+    margin-top: 50px;
+  }
+    
+  .header .hl {
+    top: 130px;
+  }
+    
+  .sidebar a {
+    font-size: 18px;
+    padding: 0px 12px 0px 12px;
+  }
+    
+  }
     </style>
   </head>
   
