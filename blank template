@@ -1,0 +1,45 @@
+<html>
+  <link href="https://fonts.googleapis.com/css?family=Coda|Noto+Serif|Nunito|Oswald|Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://maharber.github.io/personalSitestyle.css">
+  
+  <head>
+    <title>About Me</title>
+    
+  </head>
+  
+  <body>
+    
+    <!--Sidebar -->
+  <div onmouseover="openNav()" onmouseout="closeNav()" id="mySidebar" class="sidebar">
+    <p>Sitemap</p>
+    <a href="https://maharber.github.io/">Home</a>
+    <strong><a href="https://maharber.github.io/about/" style="color: #8FF4FF;">About Me</a></strong>
+    <a href="https://maharber.github.io/projects/">Projects</a>
+    <a href="https://maharber.github.io/media/">Media</a>
+    <a href="https://maharber.github.io/contact/">Contact</a>
+  </div>
+    
+    <!-- Main  -->
+  <div id="main">
+    <div class="header">
+        <a href="https://maharber.github.io"><b>Miles' Website</b></a>
+        <h2>Blank</h2>
+      <div class="hl"></div>
+    </div>
+    
+    <p></p>
+  </div>
+    
+    
+    <script>
+      // Open and Close Sitemap
+function openNav() {
+    document.getElementById("mySidebar").style.height = "150px";
+}
+function closeNav() {
+    document.getElementById("mySidebar").style.height = "30px";
+}
+  </script>
+    
+  </body>
+</html>
