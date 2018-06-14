@@ -91,6 +91,8 @@
         width: 100px;
       }
       .content {
+        position: relative;
+        top: -50px;
         font-family: 'Roboto', sans-serif;
         margin-bottom: 0;
       }
@@ -134,7 +136,7 @@
   }
     
   .header .hl {
-    top: 130px;
+    top: 127px;
   }
     
   .sidebar a {
