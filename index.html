@@ -5,6 +5,64 @@
   
 <head>
   <title>Miles' Personal Website</title>
+  <style>
+    .subhead {
+      display:block;
+      overflow-x: visible;
+    }
+    
+    .subhead h1 {
+      position: absolute;
+      top: 100px;
+      left: 30px;
+      margin-right: 40px;
+    }
+    
+    .subhead h2 {
+      position: relative;
+      left: 40px;
+      margin-right: 40px;
+    }
+    
+    .subhead .links a {
+      position: relative;
+      display: inline;
+      text-decoration: none;
+      font-family: 'Coda', cursive;
+      font-size: 40px;
+      color: #2977FF;
+      top: 40px;
+      width: 100%;
+      text-align: center;
+      line-height: 40px;
+      padding-left: 2%;
+      padding-right: 2%;
+      margin: 0px;
+      border: 0px;
+    }
+    @media screen and (max-width: 705px) {
+      .subhead .links a {
+        margin-top: 40px;
+        display: block;
+      }
+      .subhead h2 {
+        top: 40px;
+      }
+    }
+    
+    @media screen and (max-width: 600px) {
+      .subhead h1 {
+        top: 120px;
+      }
+      
+      .subhead h2 {
+        top: 60px;
+      }
+      .subhead .links a {
+        top: 60px;
+      }
+    }
+  </style>
 </head>
 
 
@@ -27,7 +85,16 @@
       <div class="hl"></div>    
     </div>
     
-    <p>Test text. Blah blah blah</p>
+    <div class="subhead">
+      <h1>Welcome! This is the personal website of Miles Harber.</h1>
+      <h2>I put this website together as a way to host my projects, resume, and other fun things like that, all in one place! Below you'll find links around the site.</h2>
+      <div class="links">
+        <a href="https://maharber.github.io/about/">About Me</a>
+        <a href="https://maharber.github.io/projects/">Projects</a>
+        <a href="https://maharber.github.io/media/">Media</a>
+        <a href="https://maharber.github.io/media/">Contact</a>
+      </div>
+    </div>
   </div>
   
   <script>
