@@ -88,22 +88,34 @@
   }
   
 
-  @media screen and (max-width: 350px) {
-    .header a {
-      font-size: 30px;
-    }
+   /* Narrow Screen */
+  @media screen and (max-width: 600px) {
+  .header a {
+    font-size: 30px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    top: 20px;
+  }
     
-    .header h2 {
-      font-size: 20px;
-    }
+  .header h2 {
+    font-size: 50px;   
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    top: 60px;
+  }
     
-    .sidebar a {
-      font-size: 18px;
-    }
+  .header .hl {
+    top: 130px;
+  }
     
-    .sidebar p {
-      font-size: 20px;
-    }
+  .sidebar a {
+    font-size: 18px;
+    padding: 0px 12px 0px 12px;
+  }
     
   }  
     
@@ -129,7 +141,7 @@
         <div class="hl"></div>
     </div>
     
-    <p></p>
+    <p>Projects Coming Soon!</p>
   </div>
     
     
