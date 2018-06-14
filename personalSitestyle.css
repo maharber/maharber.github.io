@@ -143,9 +143,8 @@
     font-size: 18px;
     padding: 0px 12px 0px 12px;
   }
-        .content {
-        position: relative;
-        top: -20px;
-        }
+  .content {
+      top: -20px;
+  }
     
   }
