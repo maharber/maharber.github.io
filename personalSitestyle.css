@@ -113,6 +113,7 @@
       }
       .content .extraSpace {
         position: relative;
+        top: 0;
         height: 30px;
       }
 
