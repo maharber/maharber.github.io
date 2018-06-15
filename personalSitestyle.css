@@ -83,11 +83,9 @@
     font-family: 'Oswald', sans-serif;
     
   }
-      .extraSpace {
-        position: absolute;
-        bottom: 0;
-        height: 100px;
-        width: 100%;
+      .content .extraSpace {
+        position: relative;
+        height: 10px;
       }
   /* Article styling */
       .content {
