@@ -146,5 +146,10 @@
   .content {
       top: -20px;
   }
-    
+  .content h1 {
+      font-size: 24px;
+      margin-left: 10px;
+      margin-right: 10px;
+      
+  }  
   }
