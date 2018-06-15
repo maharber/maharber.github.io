@@ -113,6 +113,9 @@
         margin: 15px 15px 0px 15px;
         padding: 0px;
       }
+      .content .player {
+      text-align: center;
+      }
 
   
    /* Narrow Screen */
