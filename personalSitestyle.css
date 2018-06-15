@@ -83,10 +83,7 @@
     font-family: 'Oswald', sans-serif;
     
   }
-      .content .extraSpace {
-        position: relative;
-        height: 30px;
-      }
+      
   /* Article styling */
       .content {
         position: relative;
@@ -113,6 +110,10 @@
       }
       .content .player {
       text-align: center;
+      }
+      .content .extraSpace {
+        position: relative;
+        height: 30px;
       }
 
   
