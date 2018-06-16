@@ -96,6 +96,11 @@
         margin-left: 30px;
         margin-bottom: 5px;
       }
+      .content .linkH {
+        font-size: 28px;
+        margin-left: 30px;
+        margin-bottom: 5px;
+      }
       .content p {
         font-size: 18px;
         margin-top: 0px;
@@ -152,7 +157,12 @@
   .content h1 {
       font-size: 24px;
       margin-left: 10px;
-      margin-right: 10px;
-      
+      margin-right: 10px;   
   }  
+  .content .linkH {
+      font-size: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+    
   }
